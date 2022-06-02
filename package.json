@@ -1,7 +1,7 @@
 {
   "name": "perisian",
   "version": "0.1.0",
-  "homepage": "https://estineali.github.io/fronta2a",
+  "homepage": "https://estineali.github.io/private_algos2aunties",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.12.3",
