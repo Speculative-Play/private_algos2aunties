@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/private_algos2aunties/static/css/main.74d2eff5.css",
+    "main.js": "/private_algos2aunties/static/js/main.215167bb.js",
+    "static/js/787.ae40e8bd.chunk.js": "/private_algos2aunties/static/js/787.ae40e8bd.chunk.js",
+    "index.html": "/private_algos2aunties/index.html",
+    "main.74d2eff5.css.map": "/private_algos2aunties/static/css/main.74d2eff5.css.map",
+    "main.215167bb.js.map": "/private_algos2aunties/static/js/main.215167bb.js.map",
+    "787.ae40e8bd.chunk.js.map": "/private_algos2aunties/static/js/787.ae40e8bd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.74d2eff5.css",
+    "static/js/main.215167bb.js"
+  ]
+}
