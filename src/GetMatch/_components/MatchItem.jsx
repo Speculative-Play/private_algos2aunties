@@ -74,7 +74,7 @@ function MatchItem(props) {
         </CardNumber>
         <CardContentWrapper>
           <CardImageContainer>
-            <img src="/sampleUserPicture.png" alt="" />
+            <img src="/images/sample_user_male.png" alt="" />
           </CardImageContainer>
           <CardInfo>
             <PersonName>

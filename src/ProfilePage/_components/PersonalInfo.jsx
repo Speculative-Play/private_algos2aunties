@@ -24,7 +24,7 @@ function PersonalInfo(props) {
                     <Grid item xs={12} sm={4} md={3}>
                         <div className="left-side-padding">
                             <div>
-                                <img className="full-width profile-image" src="/images/sample_user.jpeg" alt="sample user" />
+                                <img className="full-width profile-image" src="/images/sample_user_female.jpeg" alt="sample user" />
                             </div>
                             <div>
                                 <h3 className="profile-name">Idika Laghari</h3>
