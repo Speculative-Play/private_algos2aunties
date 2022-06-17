@@ -9,7 +9,7 @@ import CreateAccount from './CreateAccount';
 
 //Component
 function AuthPage(props) {
-    const [isLogin, setIsLogin] = useState(false);
+    const [isLogin, setIsLogin] = useState(true);
     const [form, setForm] = React.useState({
         email: '',
         password: '',
