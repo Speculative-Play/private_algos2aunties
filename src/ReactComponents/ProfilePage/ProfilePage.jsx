@@ -1,7 +1,7 @@
 import React, { Component, useState } from 'react'
 import styled from 'styled-components'
 import { Button, FormControl, OutlinedInput, Grid, StepLabel, FormGroup } from '@material-ui/core';
-import AccordionsSection from '../_components/AccordionsSection';
+import AccordionsSection from './AccordionsSection';
 import PersonalInfo from './PersonalInfo';
 const BgColor = styled.div`
     background-color: #F5EAEA;
