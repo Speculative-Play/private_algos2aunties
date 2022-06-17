@@ -1,11 +1,11 @@
-import React, { Component, useState } from 'react'
+//Packages
+import React from 'react'
 import styled from 'styled-components'
-import { Button, FormControl, OutlinedInput, Grid, StepLabel, FormGroup } from '@material-ui/core';
+
+//Source code
 import AccordionItem from './AccordionItem';
 
-const TempoPadding = styled.div`
-    padding: 10vh 20vw;
-`;
+//Component
 function AccordionsSection(props) {
 
     return (
@@ -17,5 +17,10 @@ function AccordionsSection(props) {
         </div>
     );
 }
+
+//Styling
+const TempoPadding = styled.div`
+    padding: 10vh 20vw;
+`;
 
 export default AccordionsSection;

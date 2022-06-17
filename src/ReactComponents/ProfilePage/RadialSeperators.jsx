@@ -1,6 +1,8 @@
+//Packages
 import React from "react";
 import _ from "lodash";
 
+//Components
 function Separator(props) {
   return (
     <div

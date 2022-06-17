@@ -1,73 +1,8 @@
-import React, { Component, useState } from 'react'
+//Packages
+import React, {useState } from 'react'
 import styled from 'styled-components'
-import { CircularProgressbar, CircularProgressbarWithChildren, buildStyles } from 'react-circular-progressbar';
-import { Button, FormControl, OutlinedInput, Grid, StepLabel, FormGroup } from '@material-ui/core';
-import { Accordion, AccordionSummary, AccordionDetails } from '@material-ui/core';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
-const StyledDiv = styled.div`
-    background: #FFFFFF;
-    border: 2.5px solid #2684FF;
-    box-sizing: border-box;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.75rem 1rem;
-    i {
-        color: #2684FF;
-    }
-`;
-const ReadOnlyAnswerDiv = styled.div`
-    background: #B3D4FF;
-    border-radius: 10px;
-    padding: .55rem 1.1rem;
-    text-align: left;
-    font-family: 'Fira Sans';
-    font-weight: 500;
-    font-size: 18px;
-    color: #FFFFFF;
-`;
-const ReadOnlyQuestionDiv = styled.div`
-    color: #545454;
-    margin-bottom: .45rem;
-    text-align: left;
-    padding-left: 10px;
-`;
-const QuestionDiv = styled.div`
-    background: rgba(221, 221, 221, 0.27);
-    border-radius: 10px;
-    padding: .55rem 1.1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
-    margin-bottom: 10px;
-`;
-const ShortAnswersContainer = styled.div`
-    display: flex;
-    gap: 10px;
-`;
-const LongAnswersContainer = styled.div`
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
-`;
-const ShortAnswerDiv = styled.div`
-    background: rgba(221, 221, 221, 0.49);
-    border-radius: 10px;
-    text-align: left;
-    min-width: 150px;
-    padding: .55rem 1.1rem;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    &.selected{
-        color: #FFFFFF;
-        background: #B3D4FF;
-    }
-`;
-
+//Component
 function QuestionComponent(props) {
     const [answer, setAnswer] = useState(0)
     const [isRemoved, setIsRemoved] = useState(false)
@@ -141,5 +76,69 @@ function QuestionComponent(props) {
         </div>
     );
 }
+
+//Styling
+const StyledDiv = styled.div`
+    background: #FFFFFF;
+    border: 2.5px solid #2684FF;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    i {
+        color: #2684FF;
+    }
+`;
+const ReadOnlyAnswerDiv = styled.div`
+    background: #B3D4FF;
+    border-radius: 10px;
+    padding: .55rem 1.1rem;
+    text-align: left;
+    font-family: 'Fira Sans';
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFFFFF;
+`;
+const ReadOnlyQuestionDiv = styled.div`
+    color: #545454;
+    margin-bottom: .45rem;
+    text-align: left;
+    padding-left: 10px;
+`;
+const QuestionDiv = styled.div`
+    background: rgba(221, 221, 221, 0.27);
+    border-radius: 10px;
+    padding: .55rem 1.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-bottom: 10px;
+`;
+const ShortAnswersContainer = styled.div`
+    display: flex;
+    gap: 10px;
+`;
+const LongAnswersContainer = styled.div`
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+`;
+const ShortAnswerDiv = styled.div`
+    background: rgba(221, 221, 221, 0.49);
+    border-radius: 10px;
+    text-align: left;
+    min-width: 150px;
+    padding: .55rem 1.1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &.selected{
+        color: #FFFFFF;
+        background: #B3D4FF;
+    }
+`;
 
 export default QuestionComponent;

@@ -1,93 +1,16 @@
-import React, { Component, useState } from 'react'
+//Packages
+import React, {useState } from 'react'
 import styled from 'styled-components'
-import { CircularProgressbar, CircularProgressbarWithChildren, buildStyles } from 'react-circular-progressbar';
-import { Button, FormControl, OutlinedInput, Grid, StepLabel, FormGroup } from '@material-ui/core';
+import { CircularProgressbarWithChildren, buildStyles } from 'react-circular-progressbar';
+import { Button} from '@material-ui/core';
 import { Accordion, AccordionSummary, AccordionDetails } from '@material-ui/core';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+
+//Source code 
 import RadialSeparators from './RadialSeperators';
 import QuestionComponent from './QuestionComponent'
 
-const StyledAccordion = styled(Accordion)`
-    margin-bottom: 20px;
-    &.MuiAccordion-root:before{
-        opacity: 0;
-    }
-    &.MuiAccordion-rounded:first-child, &.MuiAccordion-rounded:last-child{
-        border-radius: 10px;
-    }
-    &.MuiAccordion-rounded{
-        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-        border-radius: 10px;
-    }
-`;
-const StyledAccordionSummary = styled(AccordionSummary)`
-    .MuiAccordionSummary-content{
-        justify-content: center;
-        display: block;
-    }
-`;
-const AccordionHeaderContainer = styled.div`
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
-    div:first-child {
-        flex-grow: 1;
-    }
-`;
-const StyledAccordionDetails = styled(AccordionDetails)`
-    &.MuiAccordionDetails-root{
-        display: block;
-    }
-`;
-const AccordinonInfo = styled.p`
-    font-size: 0.85rem;
-    padding: 0 5vw;
-    margin-top: 0;
-`;
-const ProgressContainer = styled.div`
-    width:45px;
-    height:45px;
-`;
-const InnerDetailPadding = styled.div`
-    padding: 0 3vw;
-`;
-const FlexContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-`;
-const TempMarginTop = styled.div`
-    margin-top: 3rem;
-`;
-const EditButton = styled(Button)`
-    &:not(#ed #ac){
-        background: #2684FF;
-        border-radius: 10px;
-        color: #FFFFFF;
-    }
-`;
-const ChangeButton = styled(Button)`
-    &:not(#ed #ac){
-        min-width: 13vw;
-        background: #2684FF;
-        border-radius: 10px;
-        color: ${props => props.bgColor === 'pink' ? "#FFFFFF" : "#F08599"};
-        background-color: ${props => props.bgColor === 'pink' ? "#F08599" : "#FFFFFF"};
-        border : ${props => props.bgColor === 'pink' ? "" : "2px solid #F08599"};
-    }
-`;
-const HeightMargin = styled.div`
-    margin-top: 1vh;
-    margin-bottom: 6vh;
-`;
-const ChangeButtonsDiv = styled.div`
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    justify-content: flex-end;
-    margin-top: 1rem;
-`;
 
+//Component
 function AccordionItem(props) {
 
     const [progress, setProgress] = useState(20);
@@ -192,5 +115,87 @@ function AccordionItem(props) {
         </StyledAccordion>
     );
 }
+
+//Styling
+const StyledAccordion = styled(Accordion)`
+    margin-bottom: 20px;
+    &.MuiAccordion-root:before{
+        opacity: 0;
+    }
+    &.MuiAccordion-rounded:first-child, &.MuiAccordion-rounded:last-child{
+        border-radius: 10px;
+    }
+    &.MuiAccordion-rounded{
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+    }
+`;
+const StyledAccordionSummary = styled(AccordionSummary)`
+    .MuiAccordionSummary-content{
+        justify-content: center;
+        display: block;
+    }
+`;
+const AccordionHeaderContainer = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    div:first-child {
+        flex-grow: 1;
+    }
+`;
+const StyledAccordionDetails = styled(AccordionDetails)`
+    &.MuiAccordionDetails-root{
+        display: block;
+    }
+`;
+const AccordinonInfo = styled.p`
+    font-size: 0.85rem;
+    padding: 0 5vw;
+    margin-top: 0;
+`;
+const ProgressContainer = styled.div`
+    width:45px;
+    height:45px;
+`;
+const InnerDetailPadding = styled.div`
+    padding: 0 3vw;
+`;
+const FlexContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+`;
+const TempMarginTop = styled.div`
+    margin-top: 3rem;
+`;
+const EditButton = styled(Button)`
+    &:not(#ed #ac){
+        background: #2684FF;
+        border-radius: 10px;
+        color: #FFFFFF;
+    }
+`;
+const ChangeButton = styled(Button)`
+    &:not(#ed #ac){
+        min-width: 13vw;
+        background: #2684FF;
+        border-radius: 10px;
+        color: ${props => props.bgColor === 'pink' ? "#FFFFFF" : "#F08599"};
+        background-color: ${props => props.bgColor === 'pink' ? "#F08599" : "#FFFFFF"};
+        border : ${props => props.bgColor === 'pink' ? "" : "2px solid #F08599"};
+    }
+`;
+const HeightMargin = styled.div`
+    margin-top: 1vh;
+    margin-bottom: 6vh;
+`;
+const ChangeButtonsDiv = styled.div`
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 1rem;
+`;
 
 export default AccordionItem;

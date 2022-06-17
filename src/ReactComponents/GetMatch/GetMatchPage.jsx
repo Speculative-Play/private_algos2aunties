@@ -1,41 +1,14 @@
-import React, { Component, useState } from 'react'
+//Packages
+import React from 'react'
 import styled from 'styled-components'
-import { Button, FormControl, OutlinedInput, Grid, StepLabel, FormGroup } from '@material-ui/core';
+import { Button, Grid, FormGroup } from '@material-ui/core';
+
+//SourceCode
 import ListOfMatches from './ListOfMatches';
 import draggablepiechart from '../../VanillaJS/PieChart';
 import PieChartDisplayer from './PieChartDisplayer';
-const TemporaryPadding = styled.div`
-  padding: 5% 10vw;
-`;
-const ListContainerStyle = styled.div`
-  background-color: rgba(245, 234, 234, 0.35);
-  border-radius: 17px;
-  padding: 25px;
-`;
-const QuestionsContainer = styled.div`
-  margin-top:2rem;
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  div{
-    flex-grow:1;
-  }
-`;
-const QuestionsButton = styled(Button)`
-  &:not(#bt #gt){
-    background: #E8A3B0;
-    border-radius: 14px;
-    margin-top: 1rem;
-    color: #fff;
-    padding: 0.5rem 1rem;
-  }
-`;
 
-
-const StyledFormGroup = styled(FormGroup)`
-  gap: 30px;
-  margin-bottom: 3rem;
-`;
+//Component
 function GetMatchPage(props) {
 
   return (
@@ -43,9 +16,7 @@ function GetMatchPage(props) {
       <TemporaryPadding>
         <div>
           <StyledFormGroup row id='categories-container'>
-
           </StyledFormGroup> 
-
         </div>
         <Grid container spacing={4}>
           <Grid item xs={12} sm={8}>
@@ -79,5 +50,39 @@ function GetMatchPage(props) {
     </div>
   );
 }
+
+//Styling 
+const TemporaryPadding = styled.div`
+  padding: 5% 10vw;
+`;
+const ListContainerStyle = styled.div`
+  background-color: rgba(245, 234, 234, 0.35);
+  border-radius: 17px;
+  padding: 25px;
+`;
+const QuestionsContainer = styled.div`
+  margin-top:2rem;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  div{
+    flex-grow:1;
+  }
+`;
+const QuestionsButton = styled(Button)`
+  &:not(#bt #gt){
+    background: #E8A3B0;
+    border-radius: 14px;
+    margin-top: 1rem;
+    color: #fff;
+    padding: 0.5rem 1rem;
+  }
+`;
+
+
+const StyledFormGroup = styled(FormGroup)`
+  gap: 30px;
+  margin-bottom: 3rem;
+`;
 
 export default GetMatchPage;

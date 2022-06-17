@@ -1,10 +1,8 @@
-import React, { Component, useState } from 'react'
-import ReactDOM from 'react-dom'
-import { Helmet } from "react-helmet";
+//Packages
+import React, {useState } from 'react'
 import { useEffect, useRef } from "react";
-import { Button, FormControl, OutlinedInput, Grid, StepLabel } from '@material-ui/core';
 
-
+//Component
 export default () => {
     const SearchMap = useRef(); // optional, but useful if the Map object is used after mounting
     const [v1, setV1] = useState(40)

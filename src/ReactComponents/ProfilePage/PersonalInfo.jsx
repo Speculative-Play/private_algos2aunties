@@ -1,6 +1,9 @@
+//Packages
 import React from "react";
 import { Button, Grid } from '@material-ui/core';
 
+
+//Component
 function PersonalInfo(props) {
 
     const sampleOption = <>

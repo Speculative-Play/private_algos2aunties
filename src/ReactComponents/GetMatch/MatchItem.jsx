@@ -1,7 +1,43 @@
+//Packages
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import { Button, FormControl, OutlinedInput, Grid } from '@material-ui/core';
+import { Button} from '@material-ui/core';
 
+//Component
+function MatchItem(props) {
+
+
+  return (
+    <ParentDiv>
+      <CardContainer>
+        <CardNumber>
+          1
+        </CardNumber>
+        <CardContentWrapper>
+          <CardImageContainer>
+            <img src="/images/sample_user_male.png" alt="" />
+          </CardImageContainer>
+          <CardInfo>
+            <PersonName>
+              Ikshit Singh
+            </PersonName>
+            <div>
+              <PersonInfoText>30 Years Old</PersonInfoText>
+              <PersonInfoText>Delhi, India</PersonInfoText>
+            </div>
+            <PinkButtonWrapper>
+              <Button>
+                See Profile
+              </Button>
+            </PinkButtonWrapper>
+          </CardInfo>
+        </CardContentWrapper>
+      </CardContainer>
+    </ParentDiv>
+  );
+}
+
+//Styling
 const ParentDiv = styled.div`
   background-color: white;
   border-radius: 10px;
@@ -63,37 +99,5 @@ const PinkButtonWrapper = styled.div`
   border-radius: 5px;
   }
 `;
-function MatchItem(props) {
-
-
-  return (
-    <ParentDiv>
-      <CardContainer>
-        <CardNumber>
-          1
-        </CardNumber>
-        <CardContentWrapper>
-          <CardImageContainer>
-            <img src="/images/sample_user_male.png" alt="" />
-          </CardImageContainer>
-          <CardInfo>
-            <PersonName>
-              Ikshit Singh
-            </PersonName>
-            <div>
-              <PersonInfoText>30 Years Old</PersonInfoText>
-              <PersonInfoText>Delhi, India</PersonInfoText>
-            </div>
-            <PinkButtonWrapper>
-              <Button>
-                See Profile
-              </Button>
-            </PinkButtonWrapper>
-          </CardInfo>
-        </CardContentWrapper>
-      </CardContainer>
-    </ParentDiv>
-  );
-}
 
 export default MatchItem;

@@ -1,17 +1,12 @@
-import React, { Component, useState } from 'react'
+//Packages
+import React from 'react'
 import styled from 'styled-components'
-import { Button, FormControl, OutlinedInput, Grid, StepLabel, FormGroup } from '@material-ui/core';
+
+//Source Code
 import AccordionsSection from './AccordionsSection';
 import PersonalInfo from './PersonalInfo';
-const BgColor = styled.div`
-    background-color: #F5EAEA;
-`;
-const TempoPadding = styled.div`
-    padding: 10vh 15vw;
-`;
-const MarginBottom20 = styled.div`
-    margin-bottom: 3rem;
-`;
+
+//Component
 function ProfilePage(props) {
 
     return (
@@ -29,5 +24,16 @@ function ProfilePage(props) {
         </div>
     );
 }
+
+//Styling
+const BgColor = styled.div`
+    background-color: #F5EAEA;
+`;
+const TempoPadding = styled.div`
+    padding: 10vh 15vw;
+`;
+const MarginBottom20 = styled.div`
+    margin-bottom: 3rem;
+`;
 
 export default ProfilePage;
