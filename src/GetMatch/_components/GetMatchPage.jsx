@@ -2,7 +2,7 @@ import React, { Component, useState } from 'react'
 import styled from 'styled-components'
 import { Button, FormControl, OutlinedInput, Grid, StepLabel, FormGroup } from '@material-ui/core';
 import ListOfMatches from './ListOfMatches';
-import draggablepiechart from '../../draggable-pie-chart';
+import draggablepiechart from '../../VanillaJS/PieChart';
 import PieChartDisplayer from './PieChartDisplayer';
 const TemporaryPadding = styled.div`
   padding: 5% 10vw;
