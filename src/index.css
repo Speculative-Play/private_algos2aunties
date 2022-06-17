@@ -1,7 +1,8 @@
-@import './CSS//GetMatchStyles.css';
-@import './CSS/CircularProgressBar.css';
-@import './CSS/PersonalInfo.css';
-@import './CSS/General.css';
+@import './StyleSheets/GetMatchStyles.css';
+@import './StyleSheets/CircularProgressBar.css';
+@import './StyleSheets/PersonalInfo.css';
+@import './StyleSheets/General.css';
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
